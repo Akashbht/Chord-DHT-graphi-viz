@@ -73,7 +73,6 @@ Thumbs.db
 # Project specific
 *.log
 *.dot
-backups/
 temp/
 tmp/
 
@@ -82,5 +81,5 @@ network_graph_*.png
 network_graph_*.svg
 graph_*.dot
 
-# Backup files (we'll organize these)
-network_backup_*.json
+# Backup files (we'll organize these) - but allow the backups directory structure
+backups/*.json
