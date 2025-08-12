@@ -1,0 +1,18 @@
+# Core dependencies for Chord DHT Network
+pydotplus>=2.0.2          # Graph visualization with Graphviz
+Pillow>=8.2.0             # Image processing (PIL)
+pyfiglet>=0.8.post1       # ASCII art text banners
+prometheus-client>=0.14.0 # Metrics collection and monitoring
+rich>=13.0.0              # Rich terminal UI components
+cryptography>=3.4.8       # Encryption and security
+
+# Optional dependencies for enhanced functionality
+networkx>=2.6             # Additional graph algorithms (optional)
+matplotlib>=3.5.0         # Alternative plotting (optional)
+
+# Development dependencies (uncomment for development)
+# pytest>=6.0.0
+# pytest-cov>=2.0.0
+# black>=21.0.0
+# flake8>=3.9.0
+# mypy>=0.910
