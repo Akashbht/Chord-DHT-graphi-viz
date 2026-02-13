@@ -1,6 +1,7 @@
 import hashlib
 import os
 import sys
+import subprocess
 from random import choice, sample
 import concurrent.futures
 import time
@@ -232,7 +233,8 @@ class ChordInterface:
                 ("9", "Load balancing"),
                 ("10", "Network health check"),
                 ("11", "Show all network data"),
-                ("12", "Exit")
+                ("12", "Use Chord DHT Chatbot"),
+                ("13", "Exit")
             ]
 
             for option, description in menu_items:
@@ -261,7 +263,8 @@ class ChordInterface:
             '9': self.handle_load_balancing,
             '10': self.handle_health_check,
             '11': self.handle_show_network_data,
-            '12': self.handle_exit
+            '12': self.handle_chatbot_launch,
+            '13': self.handle_exit
         }
 
         handler = handlers.get(choice)
@@ -421,6 +424,34 @@ class ChordInterface:
             self.console.print(table)
         except Exception as e:
             raise NetworkError(f"Failed to display network data: {str(e)}")
+
+    def handle_chatbot_launch(self):
+        """Launch the Chord DHT Chatbot GUI"""
+        try:
+            self.console.print("[bold cyan]╔════════════════════════════════════════╗[/bold cyan]")
+            self.console.print("[bold cyan]║   Launching Chord DHT Chatbot...      ║[/bold cyan]")
+            self.console.print("[bold cyan]╚════════════════════════════════════════╝[/bold cyan]")
+            self.console.print("[yellow]Starting the interactive chatbot interface...[/yellow]\n")
+            
+            # Get the path to the chatbot_gui.py file
+            chatbot_script = os.path.join(os.path.dirname(__file__), 'chatbot_gui.py')
+            
+            # Launch the chatbot in the current terminal
+            try:
+                subprocess.run(
+                    [sys.executable, chatbot_script],
+                    check=False
+                )
+            except FileNotFoundError:
+                self.console.print("[red]Error: chatbot_gui.py not found in the project directory[/red]")
+                logging.error("chatbot_gui.py not found")
+            
+            # Return to menu after chatbot exits
+            self.console.print("\n[bold cyan]✓ Chatbot session ended. Returning to main menu...[/bold cyan]\n")
+            
+        except Exception as e:
+            logging.error(f"Chatbot launch failed: {str(e)}")
+            self.console.print(f"[red]Failed to launch chatbot: {str(e)}[/red]")
 
     def handle_exit(self):
         """Handle application exit"""

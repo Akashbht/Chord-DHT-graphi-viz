@@ -1,0 +1,247 @@
+{
+  "timestamp": "2026-02-07T16:15:40.283641",
+  "network_info": {
+    "m": 8,
+    "ring_size": 256,
+    "total_nodes": 14
+  },
+  "nodes": [
+    {
+      "node_id": 118,
+      "successor_id": 131,
+      "predecessor_id": 105,
+      "data": {},
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.188797
+      },
+      "load": 0.0,
+      "timestamp": 1770461140.283782
+    },
+    {
+      "node_id": 246,
+      "successor_id": 255,
+      "predecessor_id": 241,
+      "data": {
+        "186": "file_2.mov",
+        "142": "file_13.png"
+      },
+      "metrics": {
+        "lookups": 1,
+        "successful_lookups": 1,
+        "failed_lookups": 0,
+        "data_size": 2,
+        "last_updated": 1770445346.6818628
+      },
+      "load": 0.0078125,
+      "timestamp": 1770461140.284723
+    },
+    {
+      "node_id": 142,
+      "successor_id": 154,
+      "predecessor_id": 131,
+      "data": {
+        "132": "file_12.txt"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.191058
+      },
+      "load": 0.00390625,
+      "timestamp": 1770461140.284775
+    },
+    {
+      "node_id": 105,
+      "successor_id": 118,
+      "predecessor_id": 93,
+      "data": {
+        "84": "file_10.png"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.1912231
+      },
+      "load": 0.00390625,
+      "timestamp": 1770461140.2848141
+    },
+    {
+      "node_id": 52,
+      "successor_id": 93,
+      "predecessor_id": 34,
+      "data": {},
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.191403
+      },
+      "load": 0.0,
+      "timestamp": 1770461140.28482
+    },
+    {
+      "node_id": 131,
+      "successor_id": 142,
+      "predecessor_id": 118,
+      "data": {
+        "123": "file_7.doc"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.191674
+      },
+      "load": 0.00390625,
+      "timestamp": 1770461140.2848582
+    },
+    {
+      "node_id": 4,
+      "successor_id": 25,
+      "predecessor_id": 255,
+      "data": {},
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.1918762
+      },
+      "load": 0.0,
+      "timestamp": 1770461140.284863
+    },
+    {
+      "node_id": 154,
+      "successor_id": 235,
+      "predecessor_id": 142,
+      "data": {
+        "145": "file_0.mov"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.1920562
+      },
+      "load": 0.00390625,
+      "timestamp": 1770461140.2849002
+    },
+    {
+      "node_id": 93,
+      "successor_id": 105,
+      "predecessor_id": 52,
+      "data": {
+        "55": "file_5.jpg",
+        "86": "file_14.png",
+        "77": "file_18.txt"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.1922271
+      },
+      "load": 0.01171875,
+      "timestamp": 1770461140.2849941
+    },
+    {
+      "node_id": 255,
+      "successor_id": 4,
+      "predecessor_id": 246,
+      "data": {},
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.192405
+      },
+      "load": 0.0,
+      "timestamp": 1770461140.284998
+    },
+    {
+      "node_id": 25,
+      "successor_id": 34,
+      "predecessor_id": 4,
+      "data": {
+        "9": "file_3.py",
+        "16": "file_19.mov"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.1925812
+      },
+      "load": 0.0078125,
+      "timestamp": 1770461140.285084
+    },
+    {
+      "node_id": 241,
+      "successor_id": 246,
+      "predecessor_id": 235,
+      "data": {},
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.1927612
+      },
+      "load": 0.0,
+      "timestamp": 1770461140.285089
+    },
+    {
+      "node_id": 34,
+      "successor_id": 52,
+      "predecessor_id": 25,
+      "data": {
+        "32": "file_9.mov"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.192946
+      },
+      "load": 0.00390625,
+      "timestamp": 1770461140.2853801
+    },
+    {
+      "node_id": 235,
+      "successor_id": 241,
+      "predecessor_id": 154,
+      "data": {
+        "187": "file_1.txt",
+        "155": "file_15.mov",
+        "160": "file_8.py",
+        "196": "file_11.txt",
+        "203": "file_16.mov",
+        "219": "file_17.doc"
+      },
+      "metrics": {
+        "lookups": 0,
+        "successful_lookups": 0,
+        "failed_lookups": 0,
+        "data_size": 0,
+        "last_updated": 1770445102.19313
+      },
+      "load": 0.0234375,
+      "timestamp": 1770461140.286098
+    }
+  ]
+}
